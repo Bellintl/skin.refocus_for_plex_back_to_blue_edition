@@ -112,14 +112,14 @@
 						<height>128</height>
 						<texture>$INFO[ListItem.ActualIcon,icons/de-,]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<visible>IsEmpty(Container(450).ListItem.Icon)</visible>
 					</control>
 					<control type="image">
 						<posx>1</posx>
 						<posy>1</posy>
 						<width>271</width>
 						<height>399</height>
-						<texture background="true">$INFO[ListItem.Thumb]</texture>
+						<texture>$INFO[Container(450).ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="image">
