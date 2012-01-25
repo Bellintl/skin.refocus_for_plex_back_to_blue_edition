@@ -88,28 +88,28 @@
                     <description>Type</description>
                     <width>532</width>
                     <label>[B]$LOCALIZE[146,,:][/B] $INFO[ListItem.Property(Addon.Type)]</label>
-                    <include>dialogLabel</include>
+                    <include>dialog_Label</include>
                 </control>
                 <control type="label">
                     <description>Author</description>
                     <posy>40</posy>
                     <width>532</width>
                     <label>[B]$LOCALIZE[21863]:[/B] $INFO[ListItem.Property(Addon.Creator)]</label>
-                    <include>dialogLabel</include>
+                    <include>dialog_Label</include>
                 </control>
                 <control type="label">
                     <description>Version</description>
                     <posy>80</posy>
                     <width>532</width>
                     <label>[B]$LOCALIZE[24051][/B] $INFO[ListItem.Property(Addon.Version)]</label>
-                    <include>dialogLabel</include>
+                    <include>dialog_Label</include>
                 </control>
                 <control type="label">
                     <description>Rating</description>
                     <posy>120</posy>
                     <width>532</width>
                     <label>[B]$LOCALIZE[563]:[/B] $INFO[ListItem.Property(Addon.Rating)]</label>
-                    <include>dialogLabel</include>
+                    <include>dialog_Label</include>
                 </control>
 			<!--<control type="fadelabel">-->
                 <control type="label">
@@ -120,7 +120,7 @@
                     <label>[B]$LOCALIZE[24052]:[/B] $INFO[ListItem.Property(Addon.Disclaimer)]</label>
                     <scrollout>false</scrollout>
                     <pauseatend>2000</pauseatend>
-                    <include>dialogLabel</include>
+                    <include>dialog_Label</include>
                 </control>
                 <control type="textbox" id="400">
                     <description>Description</description>

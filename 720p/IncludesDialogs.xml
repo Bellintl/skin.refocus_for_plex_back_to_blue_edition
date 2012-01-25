@@ -201,16 +201,6 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 	
-	<include name="dialogLabel">
-		<textoffsetx>15</textoffsetx>
-		<textoffsety>10</textoffsety>
-		<height>40</height>
-		<align>left</align>
-		<aligny>-</aligny>
-		<font>small</font>
-		<textcolor>Color1</textcolor>
-	</include>
-	
 	<include name="dialogHeading">
 		<posx>34</posx>
 		<posy>28</posy>

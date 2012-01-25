@@ -43,7 +43,7 @@
                 <width>366</width>
                 <align>center</align>
                 <label>Set Rating</label>
-				<include>dialogLabel</include>            
+				<include>dialog_Label</include>            
 			</control>
             
             <control type="label" id="2">
@@ -51,7 +51,7 @@
                 <width>366</width>
                 <align>center</align>
                 <label>Set Rating</label>
-				<include>dialogLabel</include> 
+				<include>dialog_Label</include> 
             </control>
             
             <control type="image" id="10">
