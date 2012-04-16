@@ -328,39 +328,34 @@
 					</control>					
 					<control type="radiobutton" id="206">
 						<label>hide resolution</label>
-						<onclick>Container.SetViewMode(52)</onclick>
 						<onclick>Skin.ToggleSetting(slidehideresolution)</onclick>
 						<selected>Skin.HasSetting(slidehideresolution)</selected>
 						<include>newHomeMenuSubSettingsButton</include>
-						<visible>[Control.IsVisible(52) | Control.IsVisible(55)] + !Container.Content(seasons)</visible>
+						<visible>[Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(58)] + !Container.Content(seasons)</visible>
 					</control>
 					<control type="radiobutton" id="208">
 						<label>hide aspect ratio</label>
-						<onclick>Container.SetViewMode(52)</onclick>
 						<onclick>Skin.ToggleSetting(slidehideaspectratio)</onclick>
 						<selected>Skin.HasSetting(slidehideaspectratio)</selected>
 						<include>newHomeMenuSubSettingsButton</include>
-						<visible>[Control.IsVisible(52) | Control.IsVisible(55)] + !Container.Content(seasons)</visible>
+						<visible>[Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(58)] + !Container.Content(seasons)</visible>
 					</control>
 					<control type="radiobutton" id="207">
 						<label>hide video codec</label>
-						<onclick>Container.SetViewMode(52)</onclick>
 						<onclick>Skin.ToggleSetting(slidehidevideoinfo)</onclick>
 						<selected>Skin.HasSetting(slidehidevideoinfo)</selected>
 						<include>newHomeMenuSubSettingsButton</include>
-						<visible>[Control.IsVisible(52) | Control.IsVisible(55)] + !Container.Content(seasons)</visible>
+						<visible>[Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(58)] + !Container.Content(seasons)</visible>
 					</control>					
 					<control type="radiobutton" id="209">
 						<label>hide audio codec + channels</label>
-						<onclick>Container.SetViewMode(52)</onclick>
 						<onclick>Skin.ToggleSetting(slidehideaudioinfo)</onclick>
 						<selected>Skin.HasSetting(slidehideaudioinfo)</selected>
 						<include>newHomeMenuSubSettingsButton</include>
-						<visible>[Control.IsVisible(52) | Control.IsVisible(55)] + !Container.Content(seasons)</visible>
+						<visible>[Control.IsVisible(52) | Control.IsVisible(55) | Control.IsVisible(58)] + !Container.Content(seasons)</visible>
 					</control>
 					<control type="radiobutton" id="204">
 						<label>hide content rating</label>
-						<onclick>Container.SetViewMode(52)</onclick>
 						<onclick>Skin.ToggleSetting(slidehidecontentrating)</onclick>
 						<selected>Skin.HasSetting(slidehidecontentrating)</selected>
 						<include>newHomeMenuSubSettingsButton</include>
