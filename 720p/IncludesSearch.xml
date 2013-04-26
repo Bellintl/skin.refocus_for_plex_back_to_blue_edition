@@ -60,7 +60,7 @@
 				<posy>10</posy>
 				<width>128</width>
 				<height>140</height>
-				<info>ListItem.Thumb</info>
+				<info>ListItem.Art(thumb)</info>
 				<aspectratio aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="label">
@@ -108,7 +108,7 @@
 				<posy>10</posy>
 				<width>128</width>
 				<height>140</height>
-				<info>ListItem.Thumb</info>
+				<info>ListItem.Art(thumb)</info>
 				<aspectratio aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="label">

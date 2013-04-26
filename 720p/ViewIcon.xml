@@ -25,7 +25,7 @@
 				<control type="image">
 					<width>177</width>
 					<height>250</height>
-					<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="177" height="250">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>stretch</aspectratio>
@@ -34,7 +34,7 @@
 				<control type="image">
 					<width>177</width>
 					<height>250</height>
-					<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="177" height="250">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>stretch</aspectratio>
@@ -53,7 +53,7 @@
 					<posy>220</posy>
 					<width>39</width>
 					<height>24</height>
-					<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+					<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>Skin.HasSetting(enablehdflags)</visible>
 				</control>
@@ -63,7 +63,7 @@
 				<control type="image">
 					<width>177</width>
 					<height>250</height>
-					<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="177" height="250">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>stretch</aspectratio>
@@ -73,7 +73,7 @@
 				<control type="image">
 					<width>177</width>
 					<height>250</height>
-					<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="177" height="250">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>stretch</aspectratio>
@@ -96,7 +96,7 @@
 					<posy>220</posy>
 					<width>39</width>
 					<height>24</height>
-					<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+					<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<include>focus_ThumbPoster</include>
 					<visible>[Skin.HasSetting(onlyfocusflagpanel) | Skin.HasSetting(enablehdflags)]</visible>
@@ -130,7 +130,7 @@
 					<width>134</width>
 					<height>185</height>
 					<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+					<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
@@ -139,7 +139,7 @@
 					<width>134</width>
 					<height>185</height>
 					<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+					<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<visible>Container.Content(movies)</visible>
@@ -157,7 +157,7 @@
 					<posy>158</posy>
 					<width>39</width>
 					<height>20</height>
-					<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+					<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>Skin.HasSetting(enablehdflags)</visible>
 				</control>
@@ -169,7 +169,7 @@
 					<width>134</width>
 					<height>185</height>
 					<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+					<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<include>focus_ThumbPosterInfo</include>
@@ -179,7 +179,7 @@
 					<width>134</width>
 					<height>185</height>
 					<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-					<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+					<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<include>focus_ThumbPosterInfo</include>
@@ -199,7 +199,7 @@
 					<posy>158</posy>
 					<width>39</width>
 					<height>20</height>
-					<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
+					<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/biglistresolution/,.png]</texture>
 					<aspectratio align="right">keep</aspectratio>
 					<include>focus_ThumbPosterInfo</include>
 					<visible>Skin.HasSetting(onlyfocusflagpanel) | Skin.HasSetting(enablehdflags)</visible>
@@ -231,7 +231,7 @@
 				<control type="image">
 					<width>215</width>
 					<height>165</height>
-					<texture fallback="thumbs/artist_landscape.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/artist_landscape.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="200" height="150">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>scale</aspectratio>
@@ -249,7 +249,7 @@
 				<control type="image">
 					<width>215</width>
 					<height>165</height>
-					<texture fallback="thumbs/picture_landscape.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/picture_landscape.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="200" height="150">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>scale</aspectratio>
@@ -260,7 +260,7 @@
 				<control type="image">
 					<width>215</width>
 					<height>165</height>
-					<texture fallback="thumbs/artist_landscape.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/artist_landscape.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="200" height="150">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>scale</aspectratio>
@@ -280,7 +280,7 @@
 				<control type="image">
 					<width>215</width>
 					<height>165</height>
-					<texture fallback="thumbs/picture_landscape.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/picture_landscape.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="200" height="150">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>scale</aspectratio>
@@ -347,7 +347,7 @@
 					<control type="image">
 						<width>176</width>
 						<height>176</height>
-						<texture fallback="thumbs/addon.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="thumbs/addon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture border="6" width="200" height="150"></bordertexture>
 						<bordersize>6</bordersize>
 						<aspectratio>stretch</aspectratio>
@@ -366,7 +366,7 @@
 					<control type="image">
 						<width>176</width>
 						<height>176</height>
-						<texture fallback="thumbs/addon.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="thumbs/addon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<bordertexture border="6" width="200" height="150"></bordertexture>
 						<bordersize>6</bordersize>
 						<aspectratio>stretch</aspectratio>
@@ -401,7 +401,7 @@
 				<control type="image">
 					<width>390</width>
 					<height>238</height>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="40">frames/frame_Square.png</bordertexture>
 					<bordersize>22</bordersize>
 					<aspectratio align="center">scale</aspectratio>
@@ -457,7 +457,7 @@
 				<control type="image">
 					<width>390</width>
 					<height>238</height>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordersize>22</bordersize>
 					<aspectratio align="center">scale</aspectratio>
 				</control>
@@ -528,7 +528,7 @@
 				<control type="image">
 					<width>169</width>
 					<height>169</height>
-					<texture fallback="thumbs/album.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/album.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="169" height="169">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>scale</aspectratio>
@@ -538,7 +538,7 @@
 				<control type="image">
 					<width>169</width>
 					<height>169</height>
-					<texture fallback="thumbs/album.png" background="true">$INFO[ListItem.Thumb]</texture>
+					<texture fallback="thumbs/album.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 					<bordertexture border="6" width="169" height="169">frames/frame_Square-small.png</bordertexture>
 					<bordersize>6</bordersize>
 					<aspectratio>scale</aspectratio>

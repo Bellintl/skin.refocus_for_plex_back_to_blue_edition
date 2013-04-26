@@ -703,7 +703,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -716,7 +716,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/movie_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -802,7 +802,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -815,7 +815,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -902,7 +902,7 @@
 										<width>130</width>
 										<height>80</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -951,7 +951,7 @@
 										<width>130</width>
 										<height>80</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/tvshow_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1064,7 +1064,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1077,7 +1077,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1164,7 +1164,7 @@
 										<width>130</width>
 										<height>130</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1202,7 +1202,7 @@
 										<width>130</width>
 										<height>130</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1313,7 +1313,7 @@
 										<width>130</width>
 										<height>130</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1351,7 +1351,7 @@
 										<width>130</width>
 										<height>130</height>
 										<aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1453,7 +1453,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1466,7 +1466,7 @@
 										<width>130</width>
 										<height>185</height>
 										<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Thumb]</texture>
+										<texture background="true" fallback="thumbs/actor_portrait.jpg">$INFO[ListItem.Art(thumb)]</texture>
 										<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 										<bordersize>6</bordersize>
 									</control>
@@ -1535,7 +1535,7 @@
 									<height>80</height>
 									<posy>10</posy>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" fallback="thumbs/movie_landscape">$INFO[ListItem.Thumb]</texture>
+									<texture background="true" fallback="thumbs/movie_landscape">$INFO[ListItem.Art(thumb)]</texture>
 									<bordertexture border="6">frames/frame_Square-small.png</bordertexture>
 									<bordersize>6</bordersize>
 								</control>
@@ -1558,7 +1558,7 @@
 										<align>left</align>
 										<aligny>center</aligny>
 										<scroll>false</scroll>
-										<label>$INFO[ListItem.Property(originallyAvailableAt)] • $INFO[ListItem.duration] • $INFO[ListItem.Property(sourceTitle)]</label>
+										<label>$INFO[ListItem.Property(originallyAvailableAt)] • $INFO[ListItem.DurationStr] • $INFO[ListItem.Property(sourceTitle)]</label>
 										<font>SearchResultSmall</font>
 										<textcolor>Color3</textcolor>
 										<wrapmultiline>false</wrapmultiline>
@@ -1581,7 +1581,7 @@
 									<height>80</height>
 									<posy>10</posy>
 									<aspectratio scalediffuse="false" align="center">scale</aspectratio>
-									<texture background="true" fallback="thumbs/movie_landscape">$INFO[ListItem.Thumb]</texture>
+									<texture background="true" fallback="thumbs/movie_landscape">$INFO[ListItem.Art(thumb)]</texture>
 									<bordertexture border="6">views/list-focus-bigAlt.png</bordertexture>
 									<bordersize>6</bordersize>
 								</control>
@@ -1604,7 +1604,7 @@
 										<align>left</align>
 										<aligny>center</aligny>
 										<scroll>false</scroll>
-										<label>$INFO[ListItem.Property(originallyAvailableAt)] • $INFO[ListItem.duration] &#x2022; $INFO[ListItem.Property(sourceTitle)]</label>
+										<label>$INFO[ListItem.Property(originallyAvailableAt)] • $INFO[ListItem.DurationStr] &#x2022; $INFO[ListItem.Property(sourceTitle)]</label>
 										<font>SearchResultSmall</font>
 										<textcolor>Color3</textcolor>
 										<wrapmultiline>false</wrapmultiline>

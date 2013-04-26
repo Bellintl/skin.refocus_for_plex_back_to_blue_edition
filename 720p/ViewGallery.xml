@@ -76,7 +76,7 @@
 				<width>750</width>
 				<height>422</height>
 				<aspectratio>scale</aspectratio>
-				<texture fallback="thumbs/picture.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/picture.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<visible>Window.IsActive(2)</visible>
 			</control>
 			<control type="image">
@@ -115,7 +115,7 @@
 				<width>750</width>
 				<height>422</height>
 				<aspectratio>scale</aspectratio>
-				<texture fallback="thumbs/picture.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/picture.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<visible>Window.IsActive(2)</visible>
 				<animation effect="zoom" start="100" end="173" time="200" center="362,185" tween="Cubic" condition="Control.HasFocus(8000)">Conditional</animation>
 			</control>

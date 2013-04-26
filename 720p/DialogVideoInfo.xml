@@ -149,17 +149,17 @@
 			</control>
 			<control type="label">
 				<width>740</width>
-				<label>$LOCALIZE[572] [COLOR=Color1]$INFO[Listitem.Property(mediaTag-Studio)][/COLOR]</label>
+				<label>$LOCALIZE[572] [COLOR=Color1]$INFO[ListItem.Art(mediaTag-Studio)][/COLOR]</label>
 				<include>label_Small-caps</include>
 				<include>autoscroll-line</include>
-				<visible>!IsEmpty(Listitem.Property(mediaTag-Studio))</visible>
+				<visible>!IsEmpty(ListItem.Art(mediaTag-Studio))</visible>
 			</control>
 			<control type="label">
 				<width>740</width>
-				<label>$LOCALIZE[180] [COLOR=Color1]$INFO[ListItem.Duration][/COLOR]</label>
+				<label>$LOCALIZE[180] [COLOR=Color1]$INFO[ListItem.DurationStr][/COLOR]</label>
 				<scroll>true</scroll>
 				<include>label_Small-caps</include>
-				<visible>!IsEmpty(ListItem.Duration)</visible>
+				<visible>!IsEmpty(ListItem.DurationStr)</visible>
 			</control>
 			<!--
 			<control type="label">
@@ -347,18 +347,18 @@
 				<visible>!Container.Content(musicvideos) + !Container.Content(episodes)</visible>
 			</control>
 			<control type="image">
-				<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<include>thumb_Portrait-List</include>
 				<visible>!Control.IsVisible(50) + Container.Content(movies)</visible>
 			</control>
 			<control type="image">
-				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<include>thumb_Portrait-List</include>
 				<visible>!Control.IsVisible(50) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
 <!--
 			<control type="image">
-				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<include>thumb_Portrait-List</include>
 				<visible>!Control.IsVisible(50) + Container.Content(episodes)</visible>
 			</control>
@@ -371,7 +371,7 @@
 			<control type="image">
 				<width>450</width>
 				<height>273</height>
-				<texture fallback="thumbs/actor_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/actor_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="31">frames/frame_Square.png</bordertexture>
 				<bordersize>22</bordersize>
 				<aspectratio scalediffuse="false" align="center">scale</aspectratio>

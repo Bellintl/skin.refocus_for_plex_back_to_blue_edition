@@ -16,6 +16,7 @@
 			<include>transition_Container</include>
 			<include>infoDialogHide</include>
 			<include>contextMenuHide</include>
+			<include condition="Window.IsVisible(videolibrary)">List_Video</include>
 			<include condition="Window.IsVisible(videofiles)">List_Video</include>
 			<include condition="Window.IsVisible(musicfiles) | Window.IsActive(502)">List_Music</include>
 			<include condition="Window.IsVisible(videoplaylist)">List_VideoPlaylist</include>
@@ -45,7 +46,7 @@
 				<posx>40</posx>
 				<posy>28</posy>
 				<width>510</width>
-				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
+				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.DurationStr,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
 				<include>list_Label-sub</include>
 				<visible>Container.Content(movies)</visible>
 			</control>
@@ -78,7 +79,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
@@ -123,7 +124,7 @@
 				<posx>40</posx>
 				<posy>28</posy>
 				<width>510</width>
-				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
+				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.DurationStr,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
 				<include>list_Label-sub-focus</include>
 				<visible>Container.Content(movies)</visible>
 			</control>
@@ -156,7 +157,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 			<control type="image">
@@ -352,7 +353,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
 			</control>
@@ -405,7 +406,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 			<control type="image">
@@ -441,7 +442,7 @@
 				<posx>600</posx>
 				<posy>28</posy>
 				<width>500</width>
-				<label>$INFO[ListItem.Duration]</label>
+				<label>$INFO[ListItem.DurationStr]</label>
 				<align>right</align>
 				<font>smallCaps</font>
 				<include>list_Label-sub</include>
@@ -484,7 +485,7 @@
 				<posx>600</posx>
 				<posy>25</posy>
 				<width>500</width>
-				<label>$INFO[ListItem.Duration]</label>
+				<label>$INFO[ListItem.DurationStr]</label>
 				<align>right</align>
 				<font>smallCaps</font>
 				<include>list_Label-sub-focus</include>
@@ -769,7 +770,7 @@
 			<control type="image">
 				<width>247</width>
 				<height>144</height>
-				<texture fallback="thumbs/tvshow_landscape.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/tvshow_landscape.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>scale</aspectratio>
@@ -787,7 +788,7 @@
 				<posx>260</posx>
 				<posy>28</posy>
 				<width>770</width>
-				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
+				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.DurationStr,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
 				<include>list_Label-sub</include>
 				<visible>Container.Content(movies)</visible>
 			</control>
@@ -887,7 +888,7 @@
 				<posy>8</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 		</itemlayout>
@@ -913,7 +914,7 @@
 			<control type="image">
 				<width>247</width>
 				<height>144</height>
-				<texture fallback="thumbs/tvshow_landscape.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/tvshow_landscape.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small-border.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>scale</aspectratio>
@@ -933,7 +934,7 @@
 				<posx>260</posx>
 				<posy>28</posy>
 				<width>770</width>
-				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
+				<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.DurationStr,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
 				<include>list_Label-sub-focus</include>
 				<visible>Container.Content(movies)</visible>
 			</control>
@@ -1033,7 +1034,7 @@
 				<posy>8</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<colordiffuse>Color4</colordiffuse>
 			</control>
@@ -1042,7 +1043,7 @@
 			<control type="image">
 				<width>100</width>
 				<height>144</height>
-				<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>stretch</aspectratio>
@@ -1051,7 +1052,7 @@
 			<control type="image">
 				<width>100</width>
 				<height>144</height>
-				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>stretch</aspectratio>
@@ -1077,7 +1078,7 @@
 				<posy>28</posy>
 				<control type="label">
 					<width>900</width>
-					<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
+					<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.DurationStr,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
 					<include>list_Label-sub</include>
 					<visible>Container.Content(movies)</visible>
 				</control>
@@ -1113,7 +1114,7 @@
 				<posy>10</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 		</itemlayout>
@@ -1121,7 +1122,7 @@
 			<control type="image">
 				<width>100</width>
 				<height>144</height>
-				<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/movie_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small-border.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>stretch</aspectratio>
@@ -1130,7 +1131,7 @@
 			<control type="image">
 				<width>100</width>
 				<height>144</height>
-				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/tvshow_portrait.jpg" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small-border.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>stretch</aspectratio>
@@ -1158,7 +1159,7 @@
 				<visible>!IsEmpty(ListItem.Title)</visible>
 				<control type="label">
 					<width>900</width>
-					<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
+					<label>$INFO[ListItem.Year,, • ]$INFO[ListItem.DurationStr,, $LOCALIZE[31100]]$INFO[ListItem.Genre, • ]</label>
 					<include>list_Label-sub-focus</include>
 					<visible>Container.Content(movies)</visible>
 				</control>
@@ -1197,7 +1198,7 @@
 				<posy>10</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<colordiffuse>Color4</colordiffuse>
 			</control>
@@ -1208,7 +1209,7 @@
 			<control type="image">
 				<width>118</width>
 				<height>118</height>
-				<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Thumb]</texture>
+				<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>scale</aspectratio>
@@ -1252,7 +1253,7 @@
 				<control type="label">
 					<posy>70</posy>
 					<width>770</width>
-					<label>$INFO[ListItem.Duration]</label>
+					<label>$INFO[ListItem.DurationStr]</label>
 					<include>list_Label-sub</include>
 					<visible>Container.Content(songs)</visible>
 				</control>
@@ -1272,7 +1273,7 @@
 			<control type="image">
 				<width>118</width>
 				<height>118</height>
-				<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Thumb]</texture>
+				<texture background="true" fallback="thumbs/album.png">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="384" height="384">frames/frame_Square-small-border.png</bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>scale</aspectratio>
@@ -1315,7 +1316,7 @@
 				<control type="label">
 					<posy>70</posy>
 					<width>770</width>
-					<label>$INFO[ListItem.Duration]</label>
+					<label>$INFO[ListItem.DurationStr]</label>
 					<include>list_Label-sub-focus</include>
 					<visible>Container.Content(songs)</visible>
 				</control>

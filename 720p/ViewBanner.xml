@@ -131,7 +131,7 @@
 					<height>48</height>
 					<aspectratio align="right">keep</aspectratio>
 					<colordiffuse>Color4</colordiffuse>
-					<texture>$INFO[Listitem.Property(mediaTag-Studio),flags/tvshows/mono/,.png]</texture>
+					<texture>$INFO[ListItem.Art(mediaTag-Studio),flags/tvshows/mono/,.png]</texture>
 					<include>focus_Banner</include>
 				</control>
 			</focusedlayout>

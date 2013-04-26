@@ -254,7 +254,7 @@
 			<font>smallerCaps</font>
 			<textcolor>Color3</textcolor>
 			<include>transition_PageLabel</include>
-			<visible>[Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(videofiles) | Window.IsActive(videoplaylist) | Window.IsActive(addonbrowser) | Window.IsActive(musicplaylist) | Window.IsActive(sharedcontent)] + ![Window.IsActive(movieinformation) | Window.IsActive(musicinformation)]</visible>
+			<visible>[Window.IsActive(programs) | Window.IsActive(pictures) | Window.IsActive(musiclibrary) | Window.IsActive(videolibrary) | Window.IsActive(musicfiles) | Window.IsActive(videofiles) | Window.IsActive(videoplaylist) | Window.IsActive(addonbrowser) | Window.IsActive(musicplaylist) | Window.IsActive(sharedcontent)] + ![Window.IsActive(movieinformation) | Window.IsActive(musicinformation)]</visible>
 		</control>
 	</include>
 	<!-- TYPE INCLUDES -->
@@ -495,7 +495,7 @@
 		<control type="group" id="6100">
 			<posx>20</posx>
 			<posy>24</posy>
-			<visible>!Window.IsActive(busydialog) + !Skin.HasSetting(global.kiosk) + [Window.IsActive(programs) | Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist) | Window.IsActive(addonbrowser) | Window.IsActive(videofiles) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(pictures) | Window.IsActive(600) | Window.IsActive(sharedcontent)] + !Control.IsVisible(9900)</visible>
+			<visible>!Window.IsActive(busydialog) + !Skin.HasSetting(global.kiosk) + [Window.IsActive(programs) | Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist) | Window.IsActive(addonbrowser) | Window.IsActive(videofiles) | Window.IsActive(musiclibrary) | Window.IsActive(videolibrary) | Window.IsActive(musicfiles) | Window.IsActive(pictures) | Window.IsActive(600) | Window.IsActive(sharedcontent)] + !Control.IsVisible(9900)</visible>
 			<animation effect="slide" end="0,-3" condition="true">Conditional</animation>
 			<include>transition_Indicator</include>
 			<control type="image">
@@ -1000,7 +1000,7 @@
 			<control type="image">
 				<width>256</width>
 				<height>256</height>
-				<texture fallback="thumbs/addon.png" background="true">$INFO[ListItem.Thumb]</texture>
+				<texture fallback="thumbs/addon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				<bordertexture border="6" width="200" height="150"></bordertexture>
 				<bordersize>6</bordersize>
 				<aspectratio>keep</aspectratio>
@@ -1066,7 +1066,7 @@
 						<posy>22</posy>
 						<width>400</width>
 						<height>400</height>
-						<texture fallback="thumbs/album.png" background="true">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="thumbs/album.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio align="center">scale</aspectratio>
 						<fadetime>fadetime_Thumb</fadetime>
 					</control>
