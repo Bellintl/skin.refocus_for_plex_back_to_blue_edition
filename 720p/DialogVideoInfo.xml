@@ -3,6 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 
 	<controls>
+		<include>global_Background</include>
 <!---TRIGGER------>
 		<control type="button" id="5000">
 			<label>SHOULD NOT SEE ME</label>
@@ -149,10 +150,10 @@
 			</control>
 			<control type="label">
 				<width>740</width>
-				<label>$LOCALIZE[572] [COLOR=Color1]$INFO[ListItem.Art(mediaTag-Studio)][/COLOR]</label>
+				<label>$LOCALIZE[572] [COLOR=Color1]$INFO[ListItem.Property(mediaTag-Studio)][/COLOR]</label>
 				<include>label_Small-caps</include>
 				<include>autoscroll-line</include>
-				<visible>!IsEmpty(ListItem.Art(mediaTag-Studio))</visible>
+				<visible>!IsEmpty(ListItem.Art(mediaTag::Studio))</visible>
 			</control>
 			<control type="label">
 				<width>740</width>

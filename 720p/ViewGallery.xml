@@ -46,7 +46,7 @@
 			<orientation>horizontal</orientation>
 			<focusposition>1</focusposition>
 			<preloaditems>2</preloaditems>
-			<include condition="Window.IsVisible(videofiles)">GalleryVideo</include>
+			<include condition="Window.IsVisible(videofiles) | Window.IsVisible(videolibrary)">GalleryVideo</include>
 			<include condition="Window.IsVisible(pictures)">GalleryPictures</include>
 			<visible>[Container.Content(movies) | Container.Content(tvshows) | Window.IsActive(pictures)] + !Window.IsActive(progressdialog) + !IsEmpty(Container.FolderPath)</visible>
 			<include>transition2</include>

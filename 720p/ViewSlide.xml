@@ -97,7 +97,7 @@
 			<include>transition2</include>
 			<include>infoDialogHide</include>
 			<include>contextMenuHide</include>
-			<include condition="Window.IsVisible(videofiles)">SlideWideVideo</include>
+			<include condition="Window.IsVisible(videofiles) | Window.IsVisible(videolibrary)">SlideWideVideo</include>
 			<include condition="Window.IsVisible(musicfiles)">SlideWideMusic</include>
 		</control>
 	</include>	

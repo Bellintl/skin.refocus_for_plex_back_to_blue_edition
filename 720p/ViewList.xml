@@ -79,7 +79,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
@@ -157,7 +157,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 			<control type="image">
@@ -353,7 +353,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
 			</control>
@@ -406,7 +406,7 @@
 				<posy>35</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 			<control type="image">
@@ -743,7 +743,7 @@
 			<include>infoDialogHide</include>
 			<include>contextMenuHide</include>
 			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(albums) | Container.Content(songs)</visible>
-			<include condition="Window.IsVisible(videofiles)">BigList_Video</include>
+			<include condition="Window.IsVisible(videofiles) | Window.IsVisible(videolibrary)">BigList_Video</include>
 			<include condition="Window.IsVisible(musicfiles)">BigList_Music</include>
 		</control>
 	</include>
@@ -888,7 +888,7 @@
 				<posy>8</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 		</itemlayout>
@@ -1034,7 +1034,7 @@
 				<posy>8</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<colordiffuse>Color4</colordiffuse>
 			</control>
@@ -1114,7 +1114,7 @@
 				<posy>10</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/nf-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 			</control>
 		</itemlayout>
@@ -1198,7 +1198,7 @@
 				<posy>10</posy>
 				<width>32</width>
 				<height>32</height>
-				<texture>$INFO[ListItem.Art(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flags/hd/fo-,.png]</texture>
 				<aspectratio align="right">keep</aspectratio>
 				<colordiffuse>Color4</colordiffuse>
 			</control>

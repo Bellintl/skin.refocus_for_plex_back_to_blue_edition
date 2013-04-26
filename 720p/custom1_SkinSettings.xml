@@ -465,13 +465,13 @@
 					<selected>Skin.HasSetting(home.showpicturechannel)</selected>
 					<include>newHomeMenuSubSettingsButton</include>
 				</control>
-				<!-- search -->
-				<control type="radiobutton" id="291">
+				<!-- search diabled: has to be first on home screen? -->
+				<!--<control type="radiobutton" id="291">
 					<label>Show Search in Main Menu</label>
 					<onclick>Skin.ToggleSetting(homeMenuSearch)</onclick>
 					<selected>Skin.HasSetting(homeMenuSearch)</selected>
 					<include>newHomeMenuSubSettingsButton</include>
-				</control>
+				</control>-->
 			</control>
 		</control>
 		<!-- Separator New Home Menu -->

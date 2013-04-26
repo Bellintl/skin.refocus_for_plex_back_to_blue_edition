@@ -34,7 +34,7 @@
 					<width>128</width>
 					<height>64</height>
 					<aspectratio align="right">keep</aspectratio>
-					<texture>$INFO[ListItem.Art(mediaTag-Studio),flags/studios/,.png]</texture>
+					<texture>$INFO[ListItem.Property(mediaTag-Studio),flags/studios/,.png]</texture>
 					<texture>$INFO[Listitem.Property(Album_Label),flags/labels/,.png]</texture>
 				</control>--->
 				<control type="group">
