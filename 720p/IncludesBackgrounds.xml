@@ -66,7 +66,7 @@
 		<control type="image">
 			<aspectratio>scale</aspectratio>
 			<include>screen_Dimensions</include>
-			<texture background="true">$INFO[MusicPlayer.Fanart]</texture>
+			<info>Player.Art(fanart)</info>
 			<visible>Player.HasAudio + Window.IsActive(50)</visible>
 			<include>transition_Fanart</include>
 			<fadetime>fadetime_Fanart</fadetime>

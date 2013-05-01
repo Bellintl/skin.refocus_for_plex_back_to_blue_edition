@@ -63,10 +63,10 @@
 			<description>Next track info</description>
 			<control type="label">
 				<posx>500</posx>
-				<posy>76</posy>
+				<posy>7</posy>
 				<width>500</width>
-				<font>smallBold</font>
-				<textcolor>Color0</textcolor>
+				<font>small</font>
+				<textcolor>Color2</textcolor>
 				<label>Next Track</label>
 				<align>right</align>
 			</control>
@@ -83,8 +83,8 @@
 				<posx>500</posx>
 				<posy>53</posy>
 				<width>500</width>
-				<font>smallBold</font>
-				<include>grainybeigetext</include>
+				<font>small</font>
+				<textcolor>Color3</textcolor>
 				<label>$INFO[MusicPlayer.Offset(1).Title]</label>
 				<align>right</align>
 			</control>
@@ -125,10 +125,10 @@
 			<description>Next track info</description>
 			<control type="label">
 				<posx>0</posx>
-				<posy>76</posy>
+				<posy>7</posy>
 				<width>500</width>
-				<font>smallBold</font>
-				<textcolor>Color0</textcolor>
+				<font>small</font>
+				<textcolor>Color2</textcolor>
 				<label>Next Track</label>
 				<align>left</align>
 			</control>
@@ -145,8 +145,8 @@
 				<posx>0</posx>
 				<posy>53</posy>
 				<width>500</width>
-				<font>smallBold</font>
-				<include>grainybeigetext</include>
+				<font>small</font>
+				<textcolor>Color3</textcolor>
 				<label>$INFO[MusicPlayer.Offset(1).Title]</label>
 				<align>left</align>
 			</control>
