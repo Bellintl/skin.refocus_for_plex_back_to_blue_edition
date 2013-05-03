@@ -1,4 +1,4 @@
-skin.refocus_for_plex_back_to_blue_edition
+reFocus "Back to Blue Edition" 
 ==========================================
 
 Laika Compatible version of reFocus for Plex "Back to Blue Edition".
