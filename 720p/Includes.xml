@@ -655,7 +655,7 @@
 		<textoffsety>3</textoffsety>
 		<textoffsetx>25</textoffsetx>
 		<textcolor>Color1</textcolor>
-		<texturefocus border="13,6,13,6">settings/list-focusRev.png</texturefocus>
+		<texturefocus border="13,6,13,6">settings/list-focusrev.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 	</include>
 	<!--settingsButton-->
@@ -859,7 +859,7 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="categoryButton">
-		<texturefocus border="13,6,13,6">settings/list-focusRev.png</texturefocus>
+		<texturefocus border="13,6,13,6">settings/list-focusrev.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textoffsety>3</textoffsety>
 		<textoffsetx>30</textoffsetx>
@@ -875,7 +875,7 @@
 		<animation type="Conditional" condition="true">
 			<effect type="fade" start="0" end="80"/>
 		</animation>
-		<texturefocus border="13,6,13,6">settings/list-focusRev.png</texturefocus>
+		<texturefocus border="13,6,13,6">settings/list-focusrev.png</texturefocus>
 		<textoffsety>-2</textoffsety>
 		<textoffsetx>30</textoffsetx>
 		<font>pagemenu</font>
@@ -886,7 +886,7 @@
 		<width>345</width>
 	</include>
 	<include name="newHomeMenuCategoryNoFocusBg">
-		<texturenofocus>settings/list-focusRev.png</texturenofocus>
+		<texturenofocus>settings/list-focusrev.png</texturenofocus>
 	</include>
 	<!-- new home menu formatting -->
 	<!-- categories -->
@@ -894,7 +894,7 @@
 		<animation type="Conditional" condition="true">
 			<effect type="fade" start="0" end="80"/>
 		</animation>
-		<texturefocus border="13,6,13,6">settings/list-focusRev.png</texturefocus>
+		<texturefocus border="13,6,13,6">settings/list-focusrev.png</texturefocus>
 		<textoffsety>-2</textoffsety>
 		<textoffsetx>30</textoffsetx>
 		<font>pagemenu</font>
@@ -905,14 +905,14 @@
 		<width>325</width>
 	</include>
 	<include name="newHomeMenuCategoryNoFocusBg">
-		<texturenofocus>settings/list-focusRev.png</texturenofocus>
+		<texturenofocus>settings/list-focusrev.png</texturenofocus>
 	</include>
 	<!-- sub-menus -->
 	<include name="newHomeMenuSubCategoryButton">
 		<animation type="Conditional" condition="true">
 			<effect type="fade" start="0" end="80"/>
 		</animation>
-		<texturefocus border="13,6,13,6" flipx="true">settings/list-focusRev.png</texturefocus>
+		<texturefocus border="13,6,13,6" flipx="true">settings/list-focusrev.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textoffsety>3</textoffsety>
 		<textoffsetx>30</textoffsetx>
@@ -927,7 +927,7 @@
 		<animation type="Conditional" condition="true">
 			<effect type="fade" start="0" end="80"/>
 		</animation>
-		<texturefocus border="13,6,13,6" flipx="true">settings/list-focusRev.png</texturefocus>
+		<texturefocus border="13,6,13,6" flipx="true">settings/list-focusrev.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textoffsety>3</textoffsety>
 		<textoffsetx>30</textoffsetx>
